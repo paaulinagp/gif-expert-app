@@ -7,15 +7,15 @@ const GifExpertApp = () => {
 
   const [categories, setCategories] = useState(['Harry Potter', 'Hermione Granger', 'Ron Weasley']);
 
-  const handleAdd = () => {
-    // setCategories([...categories, 'Prueba'])
-    setCategories(cats => [...cats, 'Prueba'])
-  };
+  // const handleAdd = () => {
+  //   // setCategories([...categories, 'Prueba'])
+  //   setCategories(cats => [...cats, 'Prueba'])
+  // };
 
   return (
     <>
       <h2>GifExpertApp</h2>
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
       <hr/>
       
       <ol>
