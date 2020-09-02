@@ -12,7 +12,7 @@ const AddCategory = ({setCategories}) => {
   const handleSubmit = (event)=> {
     event.preventDefault();
     if(inputValue.trim().length > 0){
-      setCategories(categories => [...categories, inputValue]);
+      setCategories(categories => [inputValue, ...categories]);
       setInputValue('');
     }
 
