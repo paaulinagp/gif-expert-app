@@ -1,16 +1,10 @@
 import React, {useState} from 'react';
-import AddCategory from './AddCaterory';
+import AddCategory from './components/AddCaterory';
+import { GifGrid } from './components/GifGrid';
 
 const GifExpertApp = () => {
 
-  // const categories = ['Harry Potter', 'Hermione Granger', 'Ron Weasley'];
-
-  const [categories, setCategories] = useState(['Harry Potter', 'Hermione Granger', 'Ron Weasley']);
-
-  // const handleAdd = () => {
-  //   // setCategories([...categories, 'Prueba'])
-  //   setCategories(cats => [...cats, 'Prueba'])
-  // };
+  const [categories, setCategories] = useState(['Harry Potter']);
 
   return (
     <>
@@ -20,9 +14,12 @@ const GifExpertApp = () => {
       
       <ol>
         {
-          categories.map( (category) => {
-            return (<li key={ category }>{ category} </li>)
-          })
+          categories.map( (category) => (
+            <GifGrid 
+              key={category}
+              category={category} 
+            />
+          ))
         }
       </ol>
     </>
