@@ -28,9 +28,15 @@ exports[`Pruebas unitarias de componente <GifGrid /> debe de mostrar items cuans
   <div
     className="card-grid"
   >
-    <Component
+    <GifGridItem
       id="ABC"
       key="ABC"
+      title="Titulo"
+      url="https://dato.com"
+    />
+    <GifGridItem
+      id="ABC2"
+      key="ABC2"
       title="Titulo"
       url="https://dato.com"
     />

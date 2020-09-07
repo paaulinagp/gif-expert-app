@@ -1,13 +1,11 @@
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
-import { GifGridItem } from './GifGridItem';
+import GifGridItem from './GifGridItem';
 import PropTypes from 'prop-types';
 
 const GifGrid = ({category}) => { 
   const { data:images, loading } = useFetchGifs(category);
-
-
-  console.log('state: ',loading)
+  
   return (
     <>
       <h3 className="animate__animated animate__fadeIn animate__delay-2s">{category}</h3>
