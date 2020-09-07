@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias de componente <GifGrid /> debe cargar correctamente el componente  1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn animate__delay-2s"
+  >
+    Category
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas unitarias de componente <GifGrid /> debe de mostrar items cuanso se cargan las imagenes 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn animate__delay-2s"
+  >
+    Category
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <Component
+      id="ABC"
+      key="ABC"
+      title="Titulo"
+      url="https://dato.com"
+    />
+  </div>
+</Fragment>
+`;

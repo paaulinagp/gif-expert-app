@@ -54,7 +54,6 @@ describe('Pruebas del componente <AddCategory />', () => {
     expect(setCategories).toHaveBeenCalledTimes(1);
     //Evaluar que sea una funcion
     expect(setCategories).toHaveBeenCalledWith( expect.any(Function));
-    
     expect(wrapper.find('input').prop('value')).toBe('');
   });
 });
